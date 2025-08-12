@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>RegEx Validation Web App</title>
+    </head>
+    <body>
+        <% if(error) { %>
+            <p style = "color:red;"><%= error%></p>
+        <% } %>
+
+        <form action="/validate" method="POST">
+            <input type="text" name="username" class="username" id="username" placeholder="username"> </br>
+            <input type="text" name="email" class="email" id="email" placeholder="email"> </br>
+            <input type="password" name="password" class="password" id="password" placeholder="password"> </br>
+            <input type="password" name="confirmpassword" class="confirmpassword" id="confirmpassword" placeholder="confirm password"> </br>
+            <input type="text" name="mobilenumber" class="mobilenumber" id="mobilenumber" placeholder="mobilenumber"> </br>
+            <input type="text" name="birthdate" class="birthdate" id="birthdate" placeholder="MM/DD/YYYY"> </br>
+            <input type="text" name="postalcode" class="postalcode" id="postalcode" placeholder="postal code"> </br>
+            <input type="submit" class="submit" value="Check"></br>
+        </form>
+
+    </body>
+</html>
